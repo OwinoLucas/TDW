@@ -1,0 +1,248 @@
+{% load bootstrap5 %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <!-- <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#00000">
+        <meta name="msapplication-TileImage" content="/static/Seat/images/logos/logo.svg">
+        <meta name="theme-color" content="#00000"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <!-- <link rel="icon" type="image/ico" href="/static/Seat/images/logos/logo.png"> -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+    
+        <div id="circle-container">
+            <img src="{% static 'images/logo.png' %}" alt="The Document Warehouse"
+                title="The Document Warehouse">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                <defs>
+                  <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 35 -10" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" operator="atop" />
+                  </filter>
+                </defs>
+              </svg>
+              <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="load-txt">
+                <span>Welcome to</span>
+                <span>The Document Warehouse</span>
+              </div>
+        </div>
+
+        
+        <div class="body-container">
+
+            
+            <div id="progress">
+                <span id="progress-value">
+                    <svg height="800px" width="800px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 512 512"  xml:space="preserve">
+                        <polygon class="st0" points="255.992,92.089 0,348.081 71.821,419.911 255.992,235.74 440.18,419.911 512,348.081 	"/>
+                    </svg>
+                </span>
+            </div>
+            <header id="header">
+                <div class="header-cont">
+            
+                    <input type="checkbox" name="" id="check">
+            
+                    <div class="logo-cnt">
+                        <a href="/" class="logo" onclick="">
+                            <img src="{% static 'images/logo.png' %}" 
+                                alt="TDW"
+                                title="The Document Warehouse">
+                                <!-- The Document<span><br>Warehouse</span> -->
+                        </a>
+                    </div>
+            
+                    
+                    {% include "nav.html" %}
+                </div>
+            </header>
+            
+                
+            
+
+            {% block content %}
+
+
+            {% endblock content %}
+
+                        
+            <footer>
+                <div class="foot-row">
+                    <div class="foot-col">
+                        <h2 class="small-gen-head">
+                            Fairseat Foundation
+                        </h2>
+                        <p class="gen-p">
+                            Fairseat Foundation, just outside Nairobi, 
+                            embraces residents in a tranquil 
+                            haven within the secure embrace of Rosslyn Lonetree Estate. 
+                            Residents enjoy privacy and independence, with limited nursing care 
+                            available, ensuring immediate assistance if required. It's distinct 
+                            from a hospital or nursing home, and applicants undergo a medical 
+                            examination for community acceptance.
+                        </p>
+
+                        <div class="foot-links">
+                            <a href="/faqs" onclick="">
+                                FAQs
+                            </a>
+                            <a href="/privacy-policy" onclick="">
+                                Privacy Policy
+                            </a>
+                            <a href="/terms-and-conditions" onclick="">
+                                Terms & Conditions
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="foot-col">
+                        <h2 class="small-gen-head">
+                            Links
+                        </h2>
+                        <ul class="foot-ul">
+                            <li onclick="">
+                                <a href="/" onclick="">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/about" onclick="">
+                                    About Us
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/fairseat" onclick="">
+                                    Fairseat
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/amenities" onclick="">
+                                    Amenities
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/activities" onclick="">
+                                    Activities
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/all-media" onclick="">
+                                    Media
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="/contact" onclick="">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="foot-col">
+                        <h2 class="small-gen-head">
+                            Office
+                        </h2>
+                        <ul class="foot-ul">
+                            <li onclick="">
+                                <i class="bi bi-geo"></i>
+                                <a href="https://goo.gl/maps/gShg2CuY8HcxiJAF9" onclick="" target="_blank">
+                                    15 Lonetree Estate,
+                                    Rosslyn,
+                                    Nairobi, Kenya (Click/Tap To Find Us)
+                                </a>
+                            </li>
+
+                            <li onclick="">
+                                <i class="bi bi-mailbox2"></i>
+                                <a onclick="">
+                                    P.O Box 670 Village Market,
+                                    Nairobi 00621 Kenya
+                                </a>
+                            </li>
+            
+                            <li onclick="">
+                                <i class="bi bi-telephone"></i>
+                                <a  href="tel:+254701719440" target="_blank" onclick="">
+                                    +254-701-719-440
+                                </a>
+                            </li>
+            
+                            <li onclick="">
+                                <i class="bi bi-telephone"></i>
+                                <a  href="tel:+254735503440" target="_blank" onclick="">
+                                    +254-735-503-440
+                                </a>
+                            </li>
+            
+                            <li onclick="">
+                                <i class="bi bi-envelope"></i>
+                                <a  href="mailto:fairseat.org" target="_blank" onclick="">
+                                    admin@fairseat.org
+                                </a>
+                            </li>
+            
+                            <li onclick="">
+                                <i class="bi bi-arrow-right-circle"></i>
+                                <a  href="/contact/useful-numbers" onclick="">
+                                    Useful Numbers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+            <div class="copyright">
+                <p class="gen-p-p">
+                    Copyright © <span id="TheYear"></span> | The Document Warehouse | site by: 
+                </p>
+                <a href="" target="_blank">The Document<span>Warehouse</span>
+                </a>
+            </div>
+
+        </div>
+
+
+        
+        <script src="{% static 'js/main.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script type="text/javascript">
+
+            AOS.init();
+        </script>
+        
+        
+
+
+    </body>
+</html>
