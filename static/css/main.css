@@ -208,7 +208,7 @@ header {
     left: 0;
     width: 100%;
     height: 6rem;
-    background: white;
+    background: linear-gradient(to right, transparent, var(--font-light), var(--accent-clr));
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.5);
     /* backdrop-filter: blur(0.5rem); */
     z-index: 10000;
@@ -243,8 +243,8 @@ header {
 }
 
 .logo img {
-    width: 42%;
-    height: 4rem;
+    width: 49%;
+    height: 6rem;
     margin-right: 0.5rem;
 }
 
@@ -633,7 +633,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 2rem;
-    background: var(--font-dark);
+    background: linear-gradient(to right, transparent, var(--font-dark), transparent);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1868,7 +1868,7 @@ footer {
     position: relative;
     padding: 2rem;
     text-align: center;
-    background: linear-gradient(to right, transparent, var(--primary-clr), transparent);
+    background: linear-gradient(to right, transparent, var(--dt-primary), transparent);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -2369,7 +2369,7 @@ footer {
     }
 
     .nav-link:hover > a {
-        background: var(--secondary-clr);
+        background: var(--font-light);
         color: var(--font-light);
     }
 
