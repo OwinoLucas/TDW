@@ -1224,6 +1224,21 @@ footer {
     margin-top: 4rem;
 }
 
+.social-links {
+    margin-top: 10px;
+}
+
+.social-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: initial;
+}
+
+.social-link:hover {
+    color: #b9a9a9;
+}
 .wrapper-cnt {
     position: relative;
     width: 90%;
