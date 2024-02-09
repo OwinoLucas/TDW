@@ -41,9 +41,9 @@
                 <div></div>
                 <div></div>
               </div>
-              <div class="load-txt">
-                <span>Welcome to</span>
-                <span>The Document Warehouse</span>
+              <div class="load-txt" >
+                <span style="color: #073c70;">Welcome to</span>
+                <span style="color: #073c70;">The Document Warehouse</span>
               </div>
         </div>
 
@@ -91,7 +91,7 @@
                 <div class="foot-row">
                     <div class="foot-col">
                         <h2 class="small-gen-head">
-                            Fairseat Foundation
+                            The Document Warehouse
                         </h2>
                         <p class="gen-p">
                             Fairseat Foundation, just outside Nairobi, 
@@ -104,13 +104,13 @@
                         </p>
 
                         <div class="foot-links">
-                            <a href="/faqs" onclick="">
+                            <a href="{% url 'FAQs' %}" onclick="">
                                 FAQs
                             </a>
-                            <a href="/privacy-policy" onclick="">
+                            <a href="{% url 'policy' %}" onclick="">
                                 Privacy Policy
                             </a>
-                            <a href="/terms-and-conditions" onclick="">
+                            <a href="{% url 'policy' %}" onclick="">
                                 Terms & Conditions
                             </a>
                         </div>
@@ -128,37 +128,31 @@
                             </li>
 
                             <li>
-                                <a href="/about" onclick="">
+                                <a href="{% url 'history' %}" onclick="">
                                     About Us
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="/fairseat" onclick="">
-                                    Fairseat
+                                <a href="{% url 'prod_and_services' %}" onclick="">
+                                    Products & Services
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="/amenities" onclick="">
-                                    Amenities
+                                <a href="{% url 'enquiry' %}" onclick="">
+                                    Governance
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="/activities" onclick="">
-                                    Activities
+                                <a href="{% url 'pics' %}" onclick="">
+                                    Gallery
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="/all-media" onclick="">
-                                    Media
-                                </a>
-                            </li>
-                            
-                            <li>
-                                <a href="/contact" onclick="">
+                                <a href="{% url 'contact' %}" onclick="">
                                     Contact Us
                                 </a>
                             </li>
@@ -173,38 +167,31 @@
                             <li onclick="">
                                 <i class="bi bi-geo"></i>
                                 <a href="https://goo.gl/maps/gShg2CuY8HcxiJAF9" onclick="" target="_blank">
-                                    15 Lonetree Estate,
-                                    Rosslyn,
-                                    Nairobi, Kenya (Click/Tap To Find Us)
+                                    Falcon road off Enterprise Road, 
+                                    Unit No 1, Consolidated Timber Yard, 
+                                    Nairobi, Kenya
                                 </a>
                             </li>
 
                             <li onclick="">
                                 <i class="bi bi-mailbox2"></i>
                                 <a onclick="">
-                                    P.O Box 670 Village Market,
-                                    Nairobi 00621 Kenya
+                                    PO Box 15242 – 00509, 
+                                    Nairobi, Kenya
                                 </a>
                             </li>
             
                             <li onclick="">
                                 <i class="bi bi-telephone"></i>
-                                <a  href="tel:+254701719440" target="_blank" onclick="">
-                                    +254-701-719-440
-                                </a>
-                            </li>
-            
-                            <li onclick="">
-                                <i class="bi bi-telephone"></i>
-                                <a  href="tel:+254735503440" target="_blank" onclick="">
-                                    +254-735-503-440
+                                <a  href="tel: +254 721429961" target="_blank" onclick="">
+                                    +254 721429961
                                 </a>
                             </li>
             
                             <li onclick="">
                                 <i class="bi bi-envelope"></i>
-                                <a  href="mailto:fairseat.org" target="_blank" onclick="">
-                                    admin@fairseat.org
+                                <a  href="mailto:ernestm@tdwke.com" target="_blank" onclick="">
+                                    ernestm@tdwke.com
                                 </a>
                             </li>
             
@@ -221,9 +208,9 @@
 
             <div class="copyright">
                 <p class="gen-p-p">
-                    Copyright © <span id="TheYear"></span> | The Document Warehouse | site by: 
+                    Copyright © <span id="TheYear"></span> | The Document Warehouse(Pty) Ltd |
                 </p>
-                <a href="" target="_blank">The Document<span>Warehouse</span>
+                <a href="/" target="_blank"><span style="color: white;">The</span> Document <span>Warehouse</span>
                 </a>
             </div>
 

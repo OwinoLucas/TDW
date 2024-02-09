@@ -15,29 +15,33 @@
                 <div class="dropdown" onclick="">
                     <ul>
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'history' %}" onclick="">
                                 Company History
                             </a>
                         </li>
 
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'overview' %}" onclick="">
                                 Company Overview
                             </a>
                         </li>
 
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'operate' %}" onclick="">
                                 How We Operate
                             </a>
                         </li>
 
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'news' %}" onclick="">
                                 News
                             </a>
                         </li>
-
+                        <li class="dropdown-link" onclick="">
+                            <a href="{% url 'FAQs' %}" onclick="">
+                                FAQs
+                            </a>
+                        </li>
                         <div class="arrow">
                         </div>
                     </ul>
@@ -52,13 +56,13 @@
                 <div class="dropdown" onclick="">
                     <ul>
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'pics' %}" onclick="">
                                 Product Pictures
                             </a>
                         </li>
 
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'vids' %}" onclick="">
                                 Videos
                             </a>
                         </li>
@@ -69,7 +73,7 @@
             </li>
             
             <li class="nav-link" onclick="" style="--i: 1.05s">
-                <a onclick="">
+                <a href="{% url 'prod_and_services' %}">
                     Products & Services
                     <i class="bi bi-caret-down-fill"></i>
                 </a>
@@ -78,25 +82,31 @@
 
                         
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'sos' %}" onclick="">
                                 Secure Offsite Storage
                             </a>
                         </li>
                         
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'scanning' %}" onclick="">
                                 Scanning / Digital Document Conversion
+                            </a>
+                        </li>
+
+                        <li class="dropdown-link" onclick="">
+                            <a href="{% url 'shredding' %}" onclick="">
+                                Secure Offsite Document Storage
                             </a>
                         </li>
                         
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'edms' %}" onclick="">
                                 EDMS
                             </a>
                         </li>
                         
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'storage' %}" onclick="">
                                 Secure Offsite Document Storage
                             </a>
                         </li>
@@ -107,7 +117,7 @@
             </li>
 
             <li class="nav-link" onclick="" style="--i: 1.25s">
-                <a href="" onclick="">
+                <a href="{%url 'contact'%}" onclick="">
                     Contact Us
                 </a>
             </li>
@@ -120,20 +130,20 @@
                 <div class="dropdown" onclick="">
                     <ul>
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'dpa' %}" onclick="">
                                 Data Protection Act Kenya, 2019
                             </a>
                         </li>
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'enquiry' %}" onclick="">
                                 Enquiry
                         </li>
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'policy' %}" onclick="">
                                 Policy
                         </li>
                         <li class="dropdown-link" onclick="">
-                            <a href="" onclick="">
+                            <a href="{% url 'downloads' %}" onclick="">
                                 Downloads
                         </li>
                         <div class="arrow"></div>

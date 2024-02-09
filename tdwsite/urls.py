@@ -3,5 +3,23 @@ from .views import *
 
 
 urlpatterns=[
-    path('', home, name='home')
+    path('', home, name='home'),
+    path('contact-us/', contact, name='contact'),
+    path('FAQs/', FAQs, name='FAQs'),
+    path('history/', history, name='history'),
+    path('news/', news, name='news'),
+    path('operate/', operate, name='operate'),
+    path('overview/', overview, name='overview'),
+    path('pics/', pics, name='pics'),
+    path('vids/', vids, name='vids'),
+    path('downloads/', downloads, name='downloads'),
+    path('dpa/', dpa, name='dpa'),
+    path('enquiry/', enquiry, name='enquiry'),
+    path('policy/', policy, name='policy'),
+    path('edms/', edms, name='edms'),
+    path('scanning/', scanning, name='scanning'),
+    path('shredding/', shredding, name='shredding'),
+    path('sos/', sos, name='sos'),
+    path('storage/', storage, name='storage'),
+    path('products-and-services/', prod_and_services, name='prod_and_services'),
 ]

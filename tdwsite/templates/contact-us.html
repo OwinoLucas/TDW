@@ -1,6 +1,138 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
+{% block content %}         
 
+<section class="contact-sec">
+    <div class="contact-cnt">
+        <div class="contactinfo" data-aos="zoom-in"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="300">
+            <h2 class="gen-head" data-aos="zoom-in"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="800"
+                style="color: white;">
+                Contact Info
+            </h2>
+
+            <ul class="contact-info">
+                <li onclick="" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800">
+                    <i class="bi bi-geo"></i>
+                    <a href="https://goo.gl/maps/gShg2CuY8HcxiJAF9" onclick="" target="_blank">
+                        Falcon road off Enterprise Road, 
+                        Unit No 1, Consolidated Timber Yard, 
+                        Nairobi, Kenya
+                    </a>
+                </li>
+
+                <li onclick="" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800">
+                    <i class="bi bi-mailbox2"></i>
+                    <a onclick="">
+                        PO Box 15242 – 00509, 
+                        Nairobi, Kenya
+                    </a>
+                </li>
+
+                <li onclick="" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800">
+                    <i class="bi bi-telephone"></i>
+                    <a  href="tel:+254 721429961" target="_blank" onclick="">
+                        +254 721429961
+                    </a>
+                </li>
+
+                <li onclick="" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800">
+                    <i class="bi bi-envelope"></i>
+                    <a  href="mailto:ernestm@tdwke.com" target="_blank" onclick="">
+                        ernestm@tdwke.com
+                    </a>
+                </li>
+
+                <li onclick="" data-aos="fade-up"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="800">
+                    <i class="bi bi-arrow-right-circle"></i>
+                    <a  href="/contact/useful-numbers" onclick="">
+                        Useful Numbers
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contactform" data-aos="zoom-in"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="400">
+            
+
+                <form method=POST action="/contact">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="wVJpea0KajEyThw15uookQFNlVN8u5WVKg6Yot4sF0FCp6NzaSp3mX7gXOasFZOl">
+                    <h2 class="gen-head head-dark" data-aos="zoom-in"
+                        data-aos-easing="ease-in-sine"
+                        data-aos-duration="800">
+                        Message Us
+                    </h2>
+
+                    <div class="formBx">
+                        <div class="inputBx w50" data-aos="fade-up"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="800">
+                            <input type="text" required name="first_name">
+                            <span>First Name</span>
+                        </div>
+
+                        <div class="inputBx w50" data-aos="fade-up"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="800">
+                            <input type="text" required name="last_name">
+                            <span>Last Name</span>
+                        </div>
+
+                        <div class="inputBx w50" data-aos="fade-up"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="800">
+                            <input type="email" required name="email">
+                            <span>Email Address</span>
+                        </div>
+
+                        <div class="inputBx w50" data-aos="fade-up"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="800">
+                            <input type="text" required name="subject">
+                            <span>Subject</span>
+                        </div>
+
+                        <div class="inputBx w100" data-aos="fade-up"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="800">
+                            <textarea required name="message"></textarea>
+                            <span>Write your mesage here...</span>
+                        </div>
+
+                        <div class="inputBx w100" data-aos="fade-up"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="800">
+                            <span class="captcha-question">What is 2 &times; 2? </span><input type="text" name="captcha_0" size="5" required id="id_captcha_0"><input type="hidden" name="captcha_1" value="64bc6b44dce5cb2635bc72b4306d72f5cfae25aa" required id="id_captcha_1">
+                        </div>
+
+                        <div class="inputBx w100" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine"
+                            data-aos-duration="800">
+                            <button type="submit" class="flatten-btn" onclick="" title="Submit Form">
+                                Send
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            
+        </div>
+    </div>
+</section>
 
 {% endblock content %}

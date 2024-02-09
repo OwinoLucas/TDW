@@ -136,8 +136,8 @@ ul {
 }
 
 #circle-container > img {
-    width: 12rem;
-    height: 12rem;
+    width: 28rem;
+    height: 13rem;
 }
 
 @keyframes loader {
@@ -1424,6 +1424,7 @@ footer {
     height: 2.75rem;
     transition: transform 0.6s ease-in-out;
     transition-delay: 0.3s;
+    background: white;
 }
 
 .question svg path {
@@ -1942,7 +1943,7 @@ footer {
     padding: 2rem 0;
     font-size: 2rem;
     letter-spacing: 0.1rem;
-    color: var(--primary-clr);
+    color: var(--accent-clr);
 }
 
 @keyframes FadIn {
