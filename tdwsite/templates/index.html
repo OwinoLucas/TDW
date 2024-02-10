@@ -2,9 +2,10 @@
 {% load static %}
 {% block content %}
 <section class="home-sec">
-    <img class="img-cnt" src="{% static 'images/bg.png' %}" 
+    <img class="img-cnt" src="{% static 'images/bg.jpeg' %}" 
         alt="Welcome to TDW"
-        title="Welcome to TDW"/>
+        title="Welcome to TDW"
+        style="background-attachment: fixed; background-repeat: no-repeat; background-position: center;"/>
     <div class="blanket"></div>
     <div class="home-content">
         <h1 class="home-head">
@@ -83,9 +84,7 @@
         <div class="media-card" data-aos="fade-up"
             data-aos-easing="ease-in-sine"
             data-aos-duration="800">
-            <img class="img-cnt" src="{% static 'images/pic6.jpg' %}" 
-                title="Apartments | Fairseat Foundation" 
-                alt="Apartments | Fairseat Foundation">
+            <img class="img-cnt" src="{% static 'images/pic6.jpg' %}">
                 <div class="blanket"></div>
                 <div class="media-card-cnt">
                     <h2 class="card-head">
@@ -94,9 +93,8 @@
                     <p class="card-p">
                         Document storage is a vital part of effective document management. The Document Warehouse specializes in providing organised and secure offsite storage archiving solutions.
                     </p>
-                    <a href="/apartments" class="card-btn" onclick="" 
-                        title="Explore Our Apartments" style="color: whitesmoke;">
-                        Explore
+                    <a href="{% url 'sos' %}" class="card-btn" title="Explore Our Apartments" style="color: whitesmoke;">
+                        Details
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
                         </svg>
@@ -107,9 +105,7 @@
         <div class="media-card" data-aos="fade-up"
             data-aos-easing="ease-in-sine"
             data-aos-duration="800">
-            <img class="img-cnt" src="{% static 'images/pic7.jpg' %}" 
-                title="Bedsits | Fairseat Foundation" 
-                alt="Bedsits | Fairseat Foundation">
+            <img class="img-cnt" src="{% static 'images/pic7.jpg' %}">
                 <div class="blanket"></div>
                 <div class="media-card-cnt">
                     <h2 class="card-head">
@@ -118,9 +114,8 @@
                     <p class="card-p">
                         We facilitate digital document conversion with a fully comprehensive document management system, that generates an effective way to manage company information digitally.
                     </p>
-                    <a href="/bedsits" class="card-btn" onclick="" 
-                        title="Explore Our Bedsits" style="color: whitesmoke;">
-                        Explore
+                    <a href="{% url 'scanning' %}" class="card-btn" style="color: whitesmoke;">
+                        Details
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
                         </svg>
@@ -131,9 +126,7 @@
         <div class="media-card" data-aos="fade-up"
             data-aos-easing="ease-in-sine"
             data-aos-duration="800">
-            <img class="img-cnt" src="{% static 'images/pic10.jpg' %}" 
-                title="Shredding" 
-                alt="Shredding">
+            <img class="img-cnt" src="{% static 'images/pic11.jpg' %}">
                 <div class="blanket"></div>
                 <div class="media-card-cnt">
                     <h2 class="card-head">
@@ -142,9 +135,8 @@
                     <p class="card-p">
                         The Document Warehouse offers Certified Shredding & Destruction services to ensure that your confidential records are destroyed in a safe and secure environment.
                     </p>
-                    <a href="/cottages" class="card-btn" onclick="" 
-                        title="Explore Our Cottages" style="color: whitesmoke;">
-                        Explore
+                    <a href="{% url 'shredding' %}" class="card-btn" style="color: whitesmoke;">
+                        Details
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
                         </svg>
@@ -155,9 +147,7 @@
         <div class="media-card" data-aos="fade-up"
             data-aos-easing="ease-in-sine"
             data-aos-duration="800">
-            <img class="img-cnt" src="{% static 'images/pic3.jpg' %}" 
-                title="EDMS" 
-                alt="EDMS">
+            <img class="img-cnt" src="{% static 'images/pic3.jpg' %}">
                 <div class="blanket"></div>
                 <div class="media-card-cnt">
                     <h2 class="card-head">
@@ -166,9 +156,8 @@
                     <p class="card-p">
                         The Document Warehouse uses advanced Electronic Documnent Management Systems(EDMS)to provide effective document management solutions.
                     </p>
-                    <a href="/main-building" class="card-btn" onclick="" 
-                        title="Explore Our Main Building" style="color: whitesmoke;">
-                        Explore
+                <a href="{% url 'edms' %}" class="card-btn" style="color: whitesmoke;">
+                        Details
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
                         </svg>
@@ -186,9 +175,7 @@
             <div class="activities-cnt-img" data-aos="zoom-in"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="800">
-                <img class="act-cnt-img" src="{% static 'images/22.jpg' %}" 
-                    alt=" Backup Media Vault Storage"
-                    title=" Backup Media Vault Storage">
+                <img class="act-cnt-img" src="{% static 'images/22.jpg' %}">
             </div>
         </div>
 
@@ -207,9 +194,9 @@
             <div class="sec-cnt-btn" data-aos="zoom-in"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="800">
-                <a href="/about/our-history" class="flatten-btn dark-btn small-btn" onclick="" 
-                    title="The History Fairseat Foundation">
-                    Our History
+                <a href="{% url 'prod_and_services' %}" class="flatten-btn dark-btn small-btn" onclick="" 
+                    title="TDW">
+                    Explore
                 </a>
             </div>
         </div>
