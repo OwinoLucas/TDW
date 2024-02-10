@@ -2,5 +2,44 @@
 {% load static %}
 {% block content %}
 
+<section class="sec-chini">
+    <div class="gen-cnt">
+  
+        <div class="col-inner">
+            <form id="gform_2" action="/ken/popia-enquiry/#gf_2" method="post" enctype="multipart/form-data">
+                <select name="input_1" aria-required="true">
+                    <option value="" selected disabled>Enquiry Type</option>
+                    <option value="Personal Information Request">Personal Information Request</option>
+                    <option value="Complaint">Complaint</option>
+                </select>
+        
+                <select name="input_2" aria-required="true" disabled>
+                    <option value="" selected disabled>Request Type</option>
+                    <option value="Inform me what personal information you have on mine">Inform me what personal information you have on mine</option>
+                    <option value="Provide me with a record or description of my personal information">Provide me with a record or description of my personal information</option>
+                    <option value="Correct or Update my Personal Information">Correct or Update my Personal Information</option>
+                </select>
+        
+                <select name="input_4" aria-required="true">
+                    <option value="" selected disabled>Contacting Office</option>
+                    <option value="jhb.io@tdw.co.za">South Africa - Johannesburg (Head Office)</option>
+                    <!-- Add other options -->
+                </select>
+        
+                <input type="text" name="input_6" placeholder="Full Name" aria-required="true">
+                <input type="email" name="input_7" placeholder="Email Address" aria-required="true">
+                <input type="tel" name="input_8" placeholder="Phone Number" aria-required="true">
+        
+                <!-- Repeat for other fields -->
+        
+                <textarea name="input_17" placeholder="Instructions / Additional Details" aria-required="true" rows="10" cols="50"></textarea>
+        
+                <input type="submit" class="button" value="Submit">
+            </form>
+        </div>
+        
+          
 
+    </div>
+</section>
 {% endblock content %}

@@ -97,3 +97,8 @@ def storage(request):
     
 
     return render(request, 'prod&services/storage.html')
+
+def dials(request):
+    
+
+    return render(request, 'dials.html')
