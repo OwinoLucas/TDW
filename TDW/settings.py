@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-b2*%vh0r*39gfjj+gxcz6f8$4pmqbt%ti*w7q$tv=!d70^(*az
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'thedocumentwarehouse-app.onrender.com']
 
 
 # Application definition
