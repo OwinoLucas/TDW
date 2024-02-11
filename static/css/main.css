@@ -223,6 +223,7 @@ header {
     display: flex;
 }
 
+
 .logo-cnt {
     flex: 1;
     display: flex;
@@ -243,9 +244,22 @@ header {
 }
 
 .logo img {
-    width: 49%;
+    width: auto;
     height: 6rem;
     margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .logo img {
+        margin-right: 9.5rem;
+    }
 }
 
 .logo span {
@@ -280,6 +294,19 @@ header {
 .logo:hover::before {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.video-fit {
+    width: 1020px;
+    height: 574px;
+    display: flex;
+}
+
+@media screen and (max-width: 995px) {
+    .video-fit {
+        width: 100%;
+        display: flex;
+    }
 }
 
 .nav-btn {
@@ -795,6 +822,18 @@ footer {
     padding-bottom: 8rem;
     flex-direction: column;
     gap: 4rem;
+}
+
+.sec-chinii {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    flex-direction: column;
+  
 }
 
 .sec-chini.no-pad-tp {
