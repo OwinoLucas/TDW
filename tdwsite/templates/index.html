@@ -2,7 +2,7 @@
 {% load static %}
 {% block content %}
 <section class="home-sec">
-    <img class="img-cnt" src="{% static 'images/pic14.jpg' %}" 
+    <img class="img-cnt" src="{% static 'images/tdw.png' %}" 
         alt="Welcome to TDW"
         title="Welcome to TDW"
         style="background-attachment: fixed; background-repeat: no-repeat; background-position: center;"/>
@@ -84,85 +84,86 @@
         <div class="media-card" data-aos="fade-up"
             data-aos-easing="ease-in-sine"
             data-aos-duration="800">
-            <img class="img-cnt" src="{% static 'images/pic6.jpg' %}">
-                <div class="blanket"></div>
-                <div class="media-card-cnt">
-                    <h2 class="card-head">
-                        Secure Offsite Storage
-                    </h2>
-                    <p class="card-p">
-                        Document storage is a vital part of effective document management. The Document Warehouse specializes in providing organised and secure offsite storage archiving solutions.
-                    </p>
-                    <a href="{% url 'sos' %}" class="card-btn" title="Explore Our Apartments" style="color: whitesmoke;">
-                        Details
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
-                        </svg>
-                    </a>
-                </div>
+            <img class="img-cnt" src="{% static 'images/pic13.jpg' %}">
+            <div class="blanket"></div>
+            <div class="media-card-cnt">
+            <h2 class="card-head">
+                Data Protection
+            </h2>
+            <p class="card-p">
+                The Document Warehouse is dedicated to ensure that you data remains sensitive to you and can be stored, retrived and destroyed at clients will.
+            </p>
+            <a href="{% url 'edms' %}" class="card-btn" style="color: whitesmoke;">
+                Details
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
+                </svg>
+            </a>
+            </div>
+            
         </div>
         
         <div class="media-card" data-aos="fade-up"
             data-aos-easing="ease-in-sine"
             data-aos-duration="800">
             <img class="img-cnt" src="{% static 'images/pic7.jpg' %}">
-                <div class="blanket"></div>
-                <div class="media-card-cnt">
-                    <h2 class="card-head">
-                        Scanning
-                    </h2>
-                    <p class="card-p">
-                        We facilitate digital document conversion with a fully comprehensive document management system, that generates an effective way to manage company information digitally.
-                    </p>
-                    <a href="{% url 'scanning' %}" class="card-btn" style="color: whitesmoke;">
-                        Details
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
-                        </svg>
-                    </a>
-                </div>
+            <div class="blanket"></div>
+            <div class="media-card-cnt">
+                <h2 class="card-head">
+                    Scanning
+                </h2>
+                <p class="card-p">
+                    We facilitate digital document conversion with a fully comprehensive document management system, that generates an effective way to manage company information digitally.
+                </p>
+                <a href="{% url 'scanning' %}" class="card-btn" style="color: whitesmoke;">
+                    Details
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
+                    </svg>
+                </a>
+            </div>
         </div>
         
         <div class="media-card" data-aos="fade-up"
             data-aos-easing="ease-in-sine"
             data-aos-duration="800">
             <img class="img-cnt" src="{% static 'images/pic11.jpg' %}">
-                <div class="blanket"></div>
-                <div class="media-card-cnt">
-                    <h2 class="card-head">
-                        Certified Shredding and Destruction
-                    </h2>
-                    <p class="card-p">
-                        The Document Warehouse offers Certified Shredding & Destruction services to ensure that your confidential records are destroyed in a safe and secure environment.
-                    </p>
-                    <a href="{% url 'shredding' %}" class="card-btn" style="color: whitesmoke;">
-                        Details
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
-                        </svg>
-                    </a>
-                </div>
+            <div class="blanket"></div>
+            <div class="media-card-cnt">
+                <h2 class="card-head">
+                    Certified Shredding and Destruction
+                </h2>
+                <p class="card-p">
+                    The Document Warehouse offers Certified Shredding & Destruction services to ensure that your confidential records are destroyed in a safe and secure environment.
+                </p>
+                <a href="{% url 'shredding' %}" class="card-btn" style="color: whitesmoke;">
+                    Details
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
+                    </svg>
+                </a>
+            </div>
         </div>
         
         <div class="media-card" data-aos="fade-up"
             data-aos-easing="ease-in-sine"
             data-aos-duration="800">
-            <img class="img-cnt" src="{% static 'images/pic3.jpg' %}">
-                <div class="blanket"></div>
-                <div class="media-card-cnt">
-                    <h2 class="card-head">
-                        Electronic Document Management Solutions(EDMS)
-                    </h2>
-                    <p class="card-p">
-                        The Document Warehouse uses advanced Electronic Documnent Management Systems(EDMS)to provide effective document management solutions.
-                    </p>
-                <a href="{% url 'edms' %}" class="card-btn" style="color: whitesmoke;">
-                        Details
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
-                        </svg>
-                    </a>
-                </div>
+            <img class="img-cnt" src="{% static 'images/pic6.jpg' %}">
+            <div class="blanket"></div>
+            <div class="media-card-cnt">
+                <h2 class="card-head">
+                    Secure Offsite Storage
+                </h2>
+                <p class="card-p">
+                    Document storage is a vital part of effective document management. The Document Warehouse specializes in providing organised and secure offsite storage archiving solutions.
+                </p>
+                <a href="{% url 'sos' %}" class="card-btn" title="Explore Our Apartments" style="color: whitesmoke;">
+                    Details
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0005 15.9995L15.0005 11.9995M15.0005 11.9995L11.0005 7.99951M15.0005 11.9995H3.00049M11.0005 2.99951H17.7997C18.9198 2.99951 19.4799 2.99951 19.9077 3.2175C20.284 3.40925 20.59 3.71521 20.7817 4.09153C20.9997 4.51935 20.9997 5.07941 20.9997 6.19951V17.7995C20.9997 18.9196 20.9997 19.4797 20.7817 19.9075C20.59 20.2838 20.284 20.5898 19.9077 20.7815C19.4799 20.9995 18.9198 20.9995 17.7997 20.9995H11.0005"/>
+                    </svg>
+                </a>
+            </div>
         </div>
         
         
@@ -354,6 +355,69 @@
             The Document Warehouse (TDW) provides our customers with a holistic offsite document storage solution. This which includes space-saving filing solutions and records management software necessary for effectively tracking files, onsite or offsite.
         </p>
     </div>
+</section>
+
+<section class="mid-sec">
+    <h2 class="gen-head" data-aos="zoom-in"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="800">
+        Customer Partners
+    </h2>
+
+    <div class="tabbed-cnt">
+        <div class="tab-containerr" data-aos="zoom-in"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="800">
+            <div class="tab-filter-containerr">
+                <div class="logo-container">
+                    <img src="{% static 'images/pad.png' %}" alt="Company Logo 2">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/icea.png' %}" alt="Company Logo 1">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/tread.jpeg' %}" alt="Company Logo 2">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/knn.png' %}" alt="Company Logo 2">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/bollore2.png' %}" alt="Company Logo 1">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/dhl3.jpg' %}" alt="Company Logo 2">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/fs.jpeg' %}" alt="Company Logo 2">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/makini.png' %}" alt="Company Logo 2">
+                </div>
+        
+                <div class="logo-container">
+                    <img src="{% static 'images/ll.png' %}" alt="Company Logo 2">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/czarnikow.jpg' %}" alt="Company Logo 1">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/mm.png' %}" alt="Company Logo 2">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/pic5.webp' %}" alt="Company Logo 2">
+                </div>
+                <div class="logo-container">
+                    <img src="{% static 'images/tf.png' %}" alt="Company Logo 2">
+                </div>
+            </div>
+        </div>
+    <!-- <div class="company-logos" data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="800">
+        
+        Add more logo containers as needed 
+    </div> -->
+    <br>
 </section>
 
 {% endblock content %}

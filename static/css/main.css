@@ -247,6 +247,7 @@ header {
     width: auto;
     height: 6rem;
     margin-right: 0.5rem;
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 768px) {
@@ -262,6 +263,22 @@ header {
     }
 }
  
+.company-logos {
+    overflow-y: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent logos from wrapping to new lines */
+    padding: 20px 0; /* Add some space around logos */
+}
+
+.logo-container {
+    display: inline-block; /* Display logos in a row */
+    margin-right: 20px; /* Add space between logos */
+}
+
+.logo-container img {
+    max-height: 100px; /* Set maximum height for logos */
+    max-width: 150px; /* Set maximum width for logos */
+}
+
 
 .logo span {
     position: absolute;
@@ -1936,6 +1953,18 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 1rem;
+    overflow-y: scroll;
+}
+
+.tab-filter-containerr {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, transparent, var(--dt-primary), transparent);
+    width: 100%;
+    display: flex;
+    align-items: center;
     gap: 1rem;
     overflow-y: scroll;
 }
