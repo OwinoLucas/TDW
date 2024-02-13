@@ -37,15 +37,6 @@ def overview(request):
 
     return render(request, 'about-us/overview.html')
 
-def pics(request):
-    
-
-    return render(request, 'gallery/pics.html')
-
-def vids(request):
-    
-
-    return render(request, 'gallery/vids.html')
 
 
 def downloads(request):
@@ -96,7 +87,7 @@ def sos(request):
 def storage(request):
     
 
-    return render(request, 'prod&services/storage.html')
+    return render(request, 'governance/storage.html')
 
 def dials(request):
     
