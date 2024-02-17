@@ -37,6 +37,12 @@ def overview(request):
 
     return render(request, 'about-us/overview.html')
 
+def news(request):
+    
+
+    return render(request, 'about-us/news.html')
+
+
 
 
 def downloads(request):

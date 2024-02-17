@@ -18,6 +18,7 @@ urlpatterns=[
     path('scanning/', scanning, name='scanning'),
     path('shredding/', shredding, name='shredding'),
     path('sos/', sos, name='sos'),
+    path('news/', news, name='news'),
     path('data-protection-act/', storage, name='storage'),
     path('useful-numbers/', dials, name='dials'),
     path('products-and-services/', prod_and_services, name='prod_and_services'),
