@@ -14,11 +14,11 @@
                 </a>
                 <div class="dropdown" onclick="">
                     <ul>
-                        <li class="dropdown-link" onclick="">
+                        <!-- <li class="dropdown-link" onclick="">
                             <a href="{% url 'history' %}" onclick="">
                                 Company History
                             </a>
-                        </li>
+                        </li> -->
 
                         <li class="dropdown-link" onclick="">
                             <a href="{% url 'overview' %}" onclick="">
@@ -37,7 +37,10 @@
                                 News
                             </a>
                         </li>
-                    
+                        <li class="dropdown-link" onclick="">
+                            <a href="{% url 'downloads' %}" onclick="">
+                                Downloads
+                        </li>
                         <div class="arrow">
                         </div>
                     </ul>
@@ -81,37 +84,12 @@
                     </ul>
                 </div>
             </li>
-
-            <li class="nav-link" onclick="" style="--i: 1.4s">
-                <a onclick="" style="color: #073c70;">
-                    Governance
-                    <i class="bi bi-caret-down-fill"></i>
+            <li class="nav-link" onclick="" style="--i: 1.25s">
+                <a href="{%url 'policy'%}" onclick="">
+                    Policy
                 </a>
-                <div class="dropdown" onclick="">
-                    <ul>
-                        <!-- <li class="dropdown-link" onclick="">
-                            <a href="https://thedocumentwarehouse.com/ken/wp-content/uploads/sites/5/2023/08/DATA-PROTECTION-POLICY.docx.pdf" onclick="">
-                                
-                            </a>
-                        </li> -->
-                        <li class="dropdown-link" onclick="">
-                            <a href="https://thedocumentwarehouse.com/ken/wp-content/uploads/sites/5/2023/08/DATA-PROTECTION-POLICY.docx.pdf" onclick="">
-                                Data Protection Act Kenya, 2019
-                            </a>
-                        </li>
-                        <li class="dropdown-link" onclick="">
-                            <a href="{% url 'policy' %}" onclick="">
-                                Privacy Policy
-                        </li>
-                        <li class="dropdown-link" onclick="">
-                            <a href="{% url 'downloads' %}" onclick="">
-                                Downloads
-                        </li>
-                        <div class="arrow"></div>
-                      
-                    </ul>
-                </div>
             </li>
+         
 
             <li class="nav-link" onclick="" style="--i: 1.25s">
                 <a href="{%url 'FAQs'%}" onclick="">

@@ -207,8 +207,8 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 6rem;
-    background: linear-gradient(to right, var(--primary-clr), var(--font-light), var(--accent-clr));
+    height: 8rem;
+    background: white;
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.5);
     /* backdrop-filter: blur(0.5rem); */
     z-index: 10000;
@@ -245,9 +245,9 @@ header {
 
 .logo img {
     width: auto;
-    height: 6rem;
+    height: 8rem;
     margin-right: 0.5rem;
-    opacity: 0.6;
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -638,9 +638,11 @@ footer {
     gap: 3rem;
     align-items: flex-start;
     justify-content: space-between;
+    font-size: larger;
 }
 
 .foot-col {
+   
     flex-basis: 33%;
     display: flex;
     flex-direction: column;
@@ -662,7 +664,7 @@ footer {
 
 .foot-links a {
     color: var(--font-light);
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     letter-spacing: 0.1rem;
     font-weight: 300;
     opacity: 0.7;
@@ -773,6 +775,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    opacity: 0.3;
 }
 
 .img-cntt {
@@ -829,6 +832,10 @@ footer {
     background: linear-gradient(to right, transparent, var(--accent-clr));
 }
 
+.midd-sec.coloredd-sec {
+    background: linear-gradient(to var(--accent-clr), transparent);
+}
+
 .sec-chini {
     position: relative;
     width: 100%;
@@ -861,7 +868,7 @@ footer {
 .gen-cnt,
 .amenity-content-cnt {
     position: relative;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
